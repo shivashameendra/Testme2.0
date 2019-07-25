@@ -27,7 +27,7 @@ public class Stepdefs {
 	@Given("Alex is on the login page")
 	public void alex_is_on_the_login_page() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver_win32\\chromedriver.exe");
-		driver = new chromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get("http://10.232.237.143:443/TestMeApp/login.htm");
